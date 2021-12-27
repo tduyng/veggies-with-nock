@@ -1,0 +1,39 @@
+
+
+exports[`Setting form body from .js fixture file 1.1`] = `"data=fixture%20loaded%20from%20javascript%20module"`;
+
+exports[`Setting form body from .json fixture file 1.1`] = `"data=fixture%20from%20JSON&testing=true&awesomeness=100"`;
+
+exports[`Setting form body from .txt fixture file 1.1`] = `"Content from text_00.txt file
+"`;
+
+exports[`Setting form body from .yaml fixture file 1.1`] = `"id=1&first_name=Rapha%C3%ABl&last_name=Benitte&gender=male"`;
+
+exports[`Setting form body from .yml fixture file 1.1`] = `"id=2&first_name=John&last_name=Doe&gender=male"`;
+
+exports[`Setting json body from .js fixture file 1.1`] = `Object {
+  "data": "fixture loaded from javascript module",
+}`;
+
+exports[`Setting json body from .json fixture file 1.1`] = `Object {
+  "awesomeness": 100,
+  "data": "fixture from JSON",
+  "testing": true,
+}`;
+
+exports[`Setting json body from .txt fixture file 1.1`] = `"Content from text_00.txt file
+"`;
+
+exports[`Setting json body from .yaml fixture file 1.1`] = `Object {
+  "first_name": "Raphaël",
+  "gender": "male",
+  "id": 1,
+  "last_name": "Benitte",
+}`;
+
+exports[`Setting json body from .yml fixture file 1.1`] = `Object {
+  "first_name": "John",
+  "gender": "male",
+  "id": 2,
+  "last_name": "Doe",
+}`;
