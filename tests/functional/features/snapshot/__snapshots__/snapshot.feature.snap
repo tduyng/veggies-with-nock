@@ -26,6 +26,13 @@ exports[`Snapshot testing on an API 1.1`] = `Object {
   "last_name": "Benitte",
 }`;
 
+exports[`Snapshot testing on an API with json file mock 1.1`] = `Object {
+  "first_name": "Raphaël",
+  "gender": "male",
+  "id": 1,
+  "last_name": "Benitte",
+}`;
+
 exports[`Snapshot testing on cli 1.1`] = `"test
 "`;
 

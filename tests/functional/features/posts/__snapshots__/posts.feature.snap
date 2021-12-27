@@ -1,0 +1,13 @@
+
+
+exports[`I can create a new post 1.1`] = `Object {
+  "post": Object {
+    "id": "equals(1((number)))",
+    "text": "quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto",
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "userId": "equal(10((number)))",
+  },
+}`;

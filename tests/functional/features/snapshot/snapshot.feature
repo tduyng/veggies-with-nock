@@ -3,9 +3,26 @@ Feature: Using snapshot step definitions
 
     Scenario: Snapshot testing on an API
         Given I mock a POST http call to forward request body for path /users/yaml
-        And set request json body from file
+        And set request json body from file2
         When I POST http://fake.io/users/yaml
         Then response body should match snapshot
+        
+    Scenario: Snapshot testing on an API for GET request
+        Given I mock a GET http call to forward request body for path /users/yaml
+        When I GET http://fake.io/users/yaml
+        Then response status code should be 200
+
+    Scenario: Snapshot testing on an API with json file mock
+        Given I mock a POST http call to forward request body for path /users/json
+        And set request json body from file2
+        When I POST http://fake.io/users/json
+        Then response status code should be 200
+        And response body should match snapshot
+
+    Scenario: Snapshot testing on an API with json file mock for GET request
+        Given I mock a GET http call to forward request body for path /users/json
+        When I GET http://fake.io/users/json
+        Then response status code should be 200
 
     Scenario: Snapshot testing on cli
         When I run command echo test
