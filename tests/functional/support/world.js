@@ -1,5 +1,5 @@
 const { setWorldConstructor } = require('@cucumber/cucumber')
-const { state, fixtures, httpApi, cli, fileSystem, snapshot } = require('@ekino/veggies')
+const { state, fixtures, httpApi, cli, fileSystem, snapshot } = require('veggies-ts')
 
 setWorldConstructor(function () {
     state.extendWorld(this)

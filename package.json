@@ -17,8 +17,8 @@
         "express": "4.17.2"
     },
     "devDependencies": {
-        "@cucumber/cucumber": "7.x",
-        "@ekino/veggies": "1.0.1",
+        "@cucumber/cucumber": "8.1.2",
+        "veggies-ts": "2.0.3",
         "@types/express": "4.17.13",
         "@types/jest": "^27.0.3",
         "@types/node": "17.0.5",

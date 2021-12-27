@@ -5,7 +5,19 @@ exports[`Snapshot testing on a CLI with json output 1.1`] = `Object {
   "name": "equal(john)",
 }`;
 
+exports[`Snapshot testing on a CLI with json output 1.17`] = `Object {
+  "gender": "equals(male)",
+  "name": "equal(john)",
+}`;
+
 exports[`Snapshot testing on a json API 1.1`] = `Object {
+  "first_name": "equals(Raphaël)",
+  "gender": "equals(male)",
+  "id": "type(number)",
+  "last_name": "equals(Benitte)",
+}`;
+
+exports[`Snapshot testing on a json API 1.16`] = `Object {
   "first_name": "equals(Raphaël)",
   "gender": "equals(male)",
   "id": "type(number)",
@@ -19,7 +31,21 @@ exports[`Snapshot testing on a json file 1.1`] = `Object {
   "last_name": "Benitte",
 }`;
 
+exports[`Snapshot testing on a json file 1.18`] = `Object {
+  "first_name": "Raphaël",
+  "gender": "type(string)",
+  "id": "type(number)",
+  "last_name": "Benitte",
+}`;
+
 exports[`Snapshot testing on an API 1.1`] = `Object {
+  "first_name": "Raphaël",
+  "gender": "male",
+  "id": 1,
+  "last_name": "Benitte",
+}`;
+
+exports[`Snapshot testing on an API 1.12`] = `Object {
   "first_name": "Raphaël",
   "gender": "male",
   "id": 1,
@@ -33,10 +59,26 @@ exports[`Snapshot testing on an API with json file mock 1.1`] = `Object {
   "last_name": "Benitte",
 }`;
 
+exports[`Snapshot testing on an API with json file mock 1.13`] = `Object {
+  "first_name": "Raphaël",
+  "gender": "male",
+  "id": 1,
+  "last_name": "Benitte",
+}`;
+
 exports[`Snapshot testing on cli 1.1`] = `"test
 "`;
 
+exports[`Snapshot testing on cli 1.14`] = `"test
+"`;
+
 exports[`Snapshot testing on files 1.1`] = `"id:         1
+first_name: Raphaël
+last_name:  Benitte
+gender:     male
+"`;
+
+exports[`Snapshot testing on files 1.15`] = `"id:         1
 first_name: Raphaël
 last_name:  Benitte
 gender:     male

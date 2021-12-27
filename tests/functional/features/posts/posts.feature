@@ -12,6 +12,10 @@ Feature: Get posts
             | post.id     | equals  | 1((number))  |
 
     Scenario: I get a list of posts
-        Given I mock a GET http call to forward request body for path /posts
+        Given I mock a GET http call from posts/fixtures/posts.json to forward request body for path /posts
         When I GET http://mysite.com/api/v1/posts
         Then response status code should be 200
+        And response json body should match snapshot
+            | field           | matcher | value       |
+            | posts[0].userId | equal   | 1((number)) |
+            | posts[0].id     | equals  | 1((number)) |
