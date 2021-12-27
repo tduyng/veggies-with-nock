@@ -1,0 +1,31 @@
+root: true
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: './tsconfig.json'
+  sourceType: module
+env:
+  node: true
+  es6: true
+  jest: true
+plugins:
+  - 'import'
+extends:
+  - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:@typescript-eslint/recommended-requiring-type-checking'
+  - 'plugin:prettier/recommended'
+  - 'plugin:import/errors'
+  - 'plugin:import/warnings'
+  - 'plugin:import/typescript'
+ignorePatterns:
+  - 'build/*'
+  - '.yarn/*'
+rules:
+  'no-duplicate-imports': 'error'
+  'no-return-await': 'error'
+  'no-unneeded-ternary': 'error'
+  'no-unused-vars': [ 'off' ]
+  'prefer-object-spread': 'error'
+  'require-await': 'off'
+  '@typescript-eslint/no-unsafe-argument': 'warn'
+  '@typescript-eslint/explicit-function-return-type': 'error'
