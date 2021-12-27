@@ -8,7 +8,7 @@
     "scripts": {
         "build": "rm -rf build & tsc -d",
         "dev": "ts-node-dev -r tsconfig-paths/register src/main.ts",
-        "examples": "./node_modules/.bin/veggies --require tests/functional/support tests/functional/features",
+        "test-func": "./node_modules/.bin/veggies --require tests/functional/support tests/functional/features",
         "fmt": "prettier --color --write \"{src,tests}/**/*.{js,ts}\"",
         "check-fmt": "prettier --list-different \"{src,tests}/**/*.{js,ts}\"",
         "lint": "eslint . --fix"

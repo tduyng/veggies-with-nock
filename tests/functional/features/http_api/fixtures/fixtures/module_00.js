@@ -1,3 +1,3 @@
 module.exports = () => ({
-    data: "fixture loaded from javascript module",
-});
+    data: 'fixture loaded from javascript module',
+})

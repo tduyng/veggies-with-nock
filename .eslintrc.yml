@@ -20,7 +20,7 @@ extends:
 ignorePatterns:
   - 'build/*'
   - '.yarn/*'
-  - 'tests/functional/support/*'
+  - '**/*.js'
 rules:
   'no-duplicate-imports': 'error'
   'no-return-await': 'error'
